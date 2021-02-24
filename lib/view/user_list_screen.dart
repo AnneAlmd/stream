@@ -50,8 +50,10 @@ class _UserListScreenState extends State<UserListScreen> {
                   leading: CircleAvatar(
                     child: Text(
                       _user.name[0],
-                      style:
-                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                      style: TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20,
+                          color: Colors.white),
                     ),
                     backgroundColor: index.isEven ? Colors.cyan : Colors.pink,
                   ),
