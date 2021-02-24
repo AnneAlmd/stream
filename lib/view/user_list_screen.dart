@@ -26,7 +26,7 @@ class _UserListScreenState extends State<UserListScreen> {
                   style: TextStyle(
                       fontWeight: FontWeight.bold, color: Colors.white),
                 ),
-                backgroundColor: Colors.deepOrange,
+                backgroundColor: Colors.orange[900],
               );
             },
           ),
@@ -44,8 +44,20 @@ class _UserListScreenState extends State<UserListScreen> {
               itemCount: users.length ?? 0,
               itemBuilder: (BuildContext context, int index) {
                 UserModel _user = users[index];
-                return ListTile();
+                return ListTile(
+                  title: Text(_user.name),
+                  subtitle: Text(_user.email),
+                  leading: CircleAvatar(
+                    child: Text(
+                      _user.name[0],
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                    ),
+                    backgroundColor: index.isEven ? Colors.cyan : Colors.pink,
+                  ),
+                );
               },
+              separatorBuilder: (context, index) => Divider(),
             );
           }),
     );
