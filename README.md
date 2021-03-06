@@ -1,6 +1,12 @@
 # streams
 
-A new Flutter project.
+Practicing Streams
+JsonPlaceHolder api
+#API test
+MVC
+ListView
+
+![API test](demo/demo.gif)
 
 ## Getting Started
 
