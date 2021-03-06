@@ -6,7 +6,7 @@ JsonPlaceHolder api
 MVC
 ListView
 
-![API test](demo/demo.gif)
+![API test](20210305_214708.gif)
 
 ## Getting Started
 
